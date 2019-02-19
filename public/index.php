@@ -1,9 +1,14 @@
 <?php
 
+$fileName = 'data.csv';
+$program = new main($fileName);
 main::start();
 
 
 class main {
+
+    private $html;
+
     static public function start(){
         $records = csv::getRecords();
         $table = html::generateTable($records);
