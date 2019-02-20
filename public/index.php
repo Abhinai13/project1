@@ -22,6 +22,8 @@ class csv {
         $records = 'test 2 text';
 
         echo "<html><body><table>\n\n";
+       
+        
         $f = fopen("test.csv", "r");
         while (($line = fgetcsv($f)) !== false) {
             echo "<tr>";
